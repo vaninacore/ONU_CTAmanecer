@@ -6,205 +6,760 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Cédula de Indicadores para Medir la Dependencia a Drogas1</title>
+        <title>Síntomas de Psicosis: SCL-90R</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h3>Cédula de Indicadores para Medir la Dependencia a Drogas1</h3>
+                <div class="col-md-12 text-center">
+                    <br>
+                    <h3>Síntomas de Psicosis: SCL-90R</h3>
+                    <br>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Prueba de detección de consumo de alcohol, tabaco y sustancias (ASSIST)1</h3>
+                    <br>
+                    <p class="text-justify"><strong>INTRUCCIONES:</strong> A continuación se presenta una lista de malestares o molestias que las personas pueden llegar a tener, lea cada una de éstas y marque la opción que describa si en las últimas semanas se le han presentado y qué tanto le afectaron; elija para cada frase una de las cinco posibilidades de respuesta: Nada, Muy poco, Poco, Bastante y Mucho . Si no se le presentaron o se le presentaron pero no le afectaron seleccione la opción “Nada”.</p>
+                    
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-12">
-                    <h4>Objetivo</h4>
-                    <p class="text-justify">La prueba es un cuestionario que tiene como propósitos detectar el consumo de sustancias (tabaco, alcohol, cannabis, cocaína, estimulantes de tipo anfetamina, inhalables, sedantes o pastillas para dormir --benzodiacepinas--, alucinógenos, opiáceos y otras drogas), identificar el nivel de riesgo por el consumo de drogas y el tipo de intervención más adecuada para el/la usuario/a.</p>
+                <div class="col-md-12">                    
+                    <form class="form-horizontal" action="">
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-2 text-right" for="nombre">Nombre del usuario:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nombre">
+                            </div>                            
+                        </div>     
+                        <div class="form-row"><br></div>
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-2 text-right" for="fecha">Fecha:</label>
+                            <div class="col-sm-4">
+                                <input type="date" class="form-control" id="fecha">
+                            </div>
+                            <label class="control-label col-sm-2 text-right" for="numeroExpediente">Nº de expediente:</label>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" id="numeroExpediente">
+                            </div>
+                        </div> 
+                    </form>
                 </div>
             </div>
+
             <div class="row">
-                <div class="col-md-12">
-                    <h4>Descripción general del instrumento</h4>
-                    <p class="text-justify">El cuestionario consta de ocho preguntas que obtienen información sobre el consumo de drogas que ha tenido alguna vez en la vida, la frecuencia de consumo en los últimos tres meses, el deseo por consumir sustancias, los problemas que se han ocasionado y las actividades no realizadas debido al consumo, la preocupación de personas cercanas e intentos por disminuir o dejar el consumo y el consumo de drogas inyectables.</p>
+                <div class="col-md-12">  
+                    <br>
+                    <br>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center">LISTA DE FRASES</th>
+                                <th scope="col" class="text-center">NUNCA</th>
+                                <th scope="col" class="text-center">MUY POCO</th>
+                                <th scope="col" class="text-center">POCO</th>
+                                <th scope="col" class="text-center">BASTABTE</th>
+                                <th scope="col" class="text-center">MUCHO</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-left">1. Perder la confianza en la mayoría de las personas</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio1" id="radio1" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio1" id="radio1" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio1" id="radio1" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio1" id="radio1" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio1" id="radio1" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">2. Sentir que me vigilan o que hablan de mí</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio2" id="radio2" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio2" id="radio2" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio2" id="radio2" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio2" id="radio2" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio2" id="radio2" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">3. Tener ideas o pensamientos que los demás no entienden</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio3" id="radio3" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio3" id="radio3" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio3" id="radio3" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio3" id="radio3" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio3" id="radio3" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">4. Sentir que los demás no me valoran como merezco</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio4" id="radio4" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio4" id="radio4" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio4" id="radio4" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio4" id="radio4" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio4" id="radio4" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">5. Sentir que se aprovechan de mí si los dejo</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio5" id="radio5" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio5" id="radio5" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio5" id="radio5" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio5" id="radio5" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio5" id="radio5" value="4">
+                                        </label>
+                                    </div>
+                                </td> 
+                            </tr>               
+                            <tr>
+                                <td class="text-left">6. Sentir que alguien puede controlar mis pensamientos</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio6" id="radio6" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio6" id="radio6" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio6" id="radio6" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio6" id="radio6" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio6" id="radio6" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">7. Escuchar voces que otras personas no pueden oír</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio7" id="radio7" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio7" id="radio7" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio7" id="radio7" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio7" id="radio7" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio7" id="radio7" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">8. Creer que la gente sabe qué estoy pensando</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio8" id="radio8" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio8" id="radio8" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio8" id="radio8" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio8" id="radio8" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio8" id="radio8" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">9. Tener ideas o pensamientos que no son los míos</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio9" id="radio9" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio9" id="radio9" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio9" id="radio9" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio9" id="radio9" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio9" id="radio9" value="4">
+                                        </label>
+                                    </div>
+                                </td>                           
+                            </tr>
+                            <tr>
+                                <td class="text-left">10. Sentirme solo/a aun estando con gente</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio10" id="radio10" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio10" id="radio10" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio10" id="radio10" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio10" id="radio10" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio10" id="radio10" value="4">
+                                        </label>
+                                    </div>
+                                </td>                          
+                            </tr>
+                            <tr>
+                                <td class="text-left">11. Pensar cosas sobre el sexo que me molestan</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio11" id="radio11" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio11" id="radio11" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio11" id="radio11" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio11" id="radio11" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio11" id="radio11" value="4">
+                                        </label>
+                                    </div>
+                                </td>                           
+                            </tr>
+                            <tr>
+                                <td class="text-left">12. Ver cosas que otros no pueden ver</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio12" id="radio12" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio12" id="radio12" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio12" id="radio12" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio12" id="radio12" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio12" id="radio12" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">13. Sentir que debo ser castigado/a por mis pecados</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio13" id="radio13" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio13" id="radio13" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio13" id="radio13" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio13" id="radio13" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio13" id="radio13" value="4">
+                                        </label>
+                                    </div>
+                                </td> 
+                            </tr>
+                            <tr>
+                                <td class="text-left">14. Sentir que algo anda mal en mi cuerpo</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio14" id="radio14" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio14" id="radio14" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio14" id="radio14" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio14" id="radio14" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio14" id="radio14" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">15. Sentirme alejado/a de las demás personas</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio15" id="radio15" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio15" id="radio15" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio15" id="radio15" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio15" id="radio15" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio15" id="radio15" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">16. Sentir algo caminando o moviéndose en mi cuerpo que no se pueda ver</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio16" id="radio16" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio16" id="radio16" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio16" id="radio16" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio16" id="radio16" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio16" id="radio16" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="text-left">17. Pensar que en mi cabeza hay algo que no funciona bien</td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio17" id="radio17" value="0">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio17" id="radio17" value="1">
+                                        </label>
+                                    </div>                            
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio17" id="radio17" value="2">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio17" id="radio17" value="3">
+                                        </label>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input position-static" type="radio" name="radio17" id="radio17" value="4">
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>       
+                        </tbody>
+                    </table>           
                 </div>
             </div>
+
+
             <div class="row">
-                <div class="col-md-12">
-                    <h4>Procedimiento de aplicación</h4>
-                    <p class="text-justify">Antes de aplicar el cuestionario es necesario que cuente con un ejemplar impreso del mismo, de forma que pueda ir leyendo y haciendo las preguntas correspondientes al/la usuario/a del servicio.</p>
-                    <p class="text-justify">Comente al/la usuario/a que le aplicará un breve cuestionario que tiene como objetivo conocer la situación de su consumo de alcohol, tabaco y otras drogas, identificar los posibles riesgos por el consumo de sustancias, así como la intervención terapéutica que puede serle de mayor utilidad de acuerdo a su situación personal.</p>
-                    <p class="text-justify">Enseguida exprésele que para conocer esta información le hará algunas preguntas que debe contestar con toda sinceridad, tal y como le han ocurrido. Al término de la entrevista agradezca la cooperación del/la usuario/a. La realización del cuestionario lleva aproximadamente de 5 a 10 minutos.</p>
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <br>
+                    <form class="form-horizontal" action="">
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-4 text-right" for="puntajeobtenido">Puntaje obtenido:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="puntajeobtenido">
+                            </div>                              
+                        </div>     
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-4 text-right" for="nivelMolestia">Nivel de molestia:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="nivelMolestia">
+                            </div>
+                        </div> 
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-4 text-right" for="nombreAplica">Nombre de quien aplica la prueba:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="nombreAplica">
+                            </div>
+                        </div> 
+                        <div class="form-row align-items-center">
+                            <label class="control-label col-sm-4 text-right" for="cargo">Cargo:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" id="cargo">
+                            </div>
+                        </div> 
+                    </form>
                 </div>
+                <div class="col-md-2"></div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Puntuación</h4>
-                    <p class="text-justify">El reactivo o pregunta 1 (¿Alguna vez en su vida ha consumido?) no tiene puntaje, pero permite identificar todas las drogas que alguna vez ha consumido el/la usuario/a y que requieren evaluarse en los siguientes reactivos (del 2 al 7).</p>
-                    <p class="text-justify">En las tablas donde aparecen cada una de las preguntas (de la 2 a la 7) está indicado el puntaje correspondiente, de acuerdo a la respuesta seleccionada para cada sustancia.</p>
-                    <p class="text-justify">El reactivo 8 (¿Alguna vez ha consumido alguna droga por vía inyectada?) tampoco se puntúa.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Recomendaciones de aplicación.</h4>
-                    <p class="text-justify">Aplique el instrumento cuando el/la usuario/a está estable en sus condiciones de salud física y presente ideas claras.</p>
-                    <p class="text-justify">Asegúrese de haber aplicado todas las preguntas con el registro en el cuestionario de sus respectivas respuestas.</p>
-                    <p class="text-justify">Al finalizar el cuestionario exprésele su reconocimiento al/la usuario/a por el desempeño conveniente que haya mostrado durante la aplicación del mismo, por ejemplo: por el esfuerzo de concentrarse para proporcionar la información solicitada, responder de manera precisa, expresar sus dudas, etcétera.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Instrucciones para calificar el instrumento</h4>
-                    <p class="text-justify">Para calcular la <strong>puntuación de riesgo</strong> debido al consumo de cada sustancia considere el siguiente procedimiento:</p>
-                    <p class="text-justify">     1) Por cada sustancia, que está rotulada como “a” Tabaco, “b” Bebidas alcohólicas hasta la “j” que corresponde a otro tipo de drogas, sume las puntuaciones obtenidas de las preguntas 2 a la 7. No incluya los resultados de la pregunta 1 ni los de la pregunta 8.</p>
-                    <p class="text-justify">Ejemplo, una puntuación para “c” Cannabis, se calcularía como sigue:</p>
-                    <p class="text-center">Puntaje2c+Puntaje3c+Puntaje4c+Puntaje5c+Puntaje6c+Puntaje7c.</p>
-                    <p class="text-justify">Otro ejemplo, para el caso de un usuario que consume cerveza y ron, las respuestas correspondientes se ubican en los puntajes de “b”= bebidas alcohólicas.</p>
-                    <p class="text-justify">Siguiendo con este ejemplo, si el/la usuario/a contesto en el reactivo 2 que ha consumido bebidas alcohólicas en los últimos 3 meses, 4 veces a la semana, el puntaje que le corresponde es de 6 = “Diario o casi diario.</p>
-                    <p class="text-justify">Si en el reactivo 3 reporta que ha sentido un fuerte deseo o ansia por consumir bebidas alcohólicas, 3 veces por semana, el puntaje que le corresponde es de 5 = “Semanalmente”.
-                    <p class="text-justify">Si en el reactivo 4 menciona que le ha causado problemas consumir alcohol al menos 1 vez a la semana, el puntaje que le corresponde es 6 = “Semanalmente”. Si en el reactivo 5 menciona que dejo de hacer lo que habitualmente se esperaba de él/ella debido al consumo, al menos 1 vez a la semana, su puntaje será de 7 = “Semanalmente”. Si en el reactivo 6 señala que un familiar sí se preocupó por su consumo, en los últimos 3 meses, su puntaje será de 6 = “Sí, en los últimos tres meses”; si en el reactivo 7 menciona que intentó reducir o eliminar el consumo, pero no en los últimos 3 meses, su puntaje será de 3 = Si, pero no en los últimos tres meses”. Con base a este ejemplo, la sumatoria total es de 33 puntos.</p>
-                    <p class="text-justify">Es importante mencionar que la pregunta 5 para obtener el puntaje total por consumo de tabaco no está codificada, por lo que su puntaje se calcula de la siguiente manera:</p>
-                    <p class="text-center">Puntaje del reactivo 2 en el inciso a + Puntaje reactivo 3 inciso a + Puntaje reactivo 4 inciso a + Puntaje reactivo 6 inciso a + Puntaje reactivo 7 inciso a.</p>
-                    <p class="text-justify">     2) Una vez obtenido el puntaje total por cada sustancia, determine el tipo de riesgo del consumo del/la usuario/a , con base en la siguiente tabla:</p>
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                        <table class="table table-bordered table-responsive">
-                            <thead>
-                              <tr>
-                                <th scope="col">Tipo de riesgo del consumo</th>
-                                <th scope="col">Alcohol</th>
-                                <th scope="col">Todas las demás sustancias</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>Riesgo bajo</td>
-                                <td>0-10</td>
-                                <td>0-3</td>                              
-                              </tr>
-                              <tr>
-                                <td>Riesgo moderado</td>
-                                <td>11-26</td>
-                                <td>27 o más</td>
-                              </tr>
-                              <tr>
-                                <td>Riesgo alto</td>
-                                <td>27 o más</td>
-                                <td>27 o más</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div>  
-                            <div class="col-md-2"></div>
-                    </div>
-                    <p class="text-justify"><strong>Riesgo bajo:</strong> Los/las usuarios/as que obtuvieron puntuaciones de 0-3 para “Todas las sustancias” o 0-10 para “Alcohol”, tienen un riesgo bajo de presentar problemas relacionados con el consumo de sustancias. Aunque pueden consumir sustancias de vez en cuando, actualmente no se enfrentan con esos problemas y dado sus hábitos actuales de consumo tienen un riesgo bajo de desarrollar futuros problemas.</p>
-                    <p class="text-justify"><strong>Riesgo moderado:</strong> Los/las usuarios/as que obtuvieron una puntuación de 4-26 para “Todas las sustancias”o de 11-26’ para “Alcohol”, aunque quizás presenten algunos problemas, tienen un riesgo moderado de presentar problemas de salud y de otro tipo. El continuar el consumo a este ritmo indica una probabilidad de futuros problemas de salud y de otro tipo, entre ellos la probabilidad de dependencia. El riesgo aumenta en los/las usuarios/as que tienen un historial de problemas por el uso de sustancias y dependencia.</p>
-                    <p class="text-justify"><strong>Riesgo alto:</strong> Una puntuación de ‘27 o más’ en cualquier sustancia sugiere que el/la usuario/a tiene un alto riesgo de dependencia de dicha sustancia y probablemente esté teniendo problemas de salud, sociales, económicos, legales y en las relaciones personales, como resultado del consumo de alcohol y otras drogas. Además, los/las usuarios/as que en promedio se han inyectado drogas en los últimos tres meses, más de cuatro veces al mes, también tienen probabilidad de estar en alto riesgo.</p>
-                    <p class="text-justify">De acuerdo al puntaje obtenido en el ejemplo anterior (33), este usuario se ubica en un riesgo alto por su consumo de alcohol, por lo que su riesgo de tener dependencia es alto, así como la probabilidad de que el consumo le haya ocasionado diversos problemas en su vida (de salud, económicos, en las relaciones personales, etcétera).</p>
-                    <p class="text-justify">Para conocer el <strong>tipo de intervención requerida</strong> anote en la casilla “Registrar puntuación para cada sustancia”, el puntaje obtenido en cada una de las sustancias de acuerdo a la situación del/la usuario/a, y posteriormente ubique cuál es la intervención más adecuada o que requiere la persona conforme a lo que se indica en la siguiente tabla:</p>                        
-                    <div class="row">
-                        <div class="col-md-2"></div>
-                        <div class="col-md-8">
-                        <table class="table table-bordered table-responsive">
-                            <thead>
-                              <tr>
-                                <th scope="col"></th>
-                                <th scope="col" class="text-center">Registrar la puntuación para cada sustancia</th>
-                                <th scope="col" class="text-center">No requiere intervención (consejo breve)</th>
-                                <th scope="col" class="text-center">Requiere intervención breve</th>
-                                <th scope="col" class="text-center">Requiere tratamiento más intensivo</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>a. Tabaco</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>b. Bebidas alcohólicas</td>
-                                <td></td>
-                                <td class="text-center">0 - 10</td>
-                                <td class="text-center">11 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>c. Cannabis</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>d. Cocaína</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>e. Estimulantes de tipo anfetamina</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>f. Inhalables</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>g. Sedantes o pastillas para dormir</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>h. Alucinógenos</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                              <tr>
-                                <td>i. Opiáceos</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              <tr>
-                                <td>j. Otros (especifique)</td>
-                                <td></td>
-                                <td class="text-center">0 - 3</td>
-                                <td class="text-center">4 - 26</td>
-                                <td class="text-center">27 +</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                          </div>  
-                            <div class="col-md-2"></div>
-                    </div>
-                    <p class="text-justify">De acuerdo con el ejemplo que se ha estado utilizando, el/la usuario/a que consume alcohol debido a su puntaje de 33, le corresponde recibir un Tratamiento más intensivo, como es el caso del tratamiento y rehabilitación otorgados en la modalidad residencial.</p>
-                    <p class="text-justify">Tarjetas de apoyo durante la aplicación.</p>
-                    tabla
-                </div>
-            </div>
+
+            <div class="row"></div>     
+
         </div>
     </body>
 </html>
